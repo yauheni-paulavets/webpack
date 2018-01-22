@@ -1,6 +1,6 @@
 {
   "name": "webpack-external-library",
-  "main": "attachmentsUiHandler",
+  "main": "dist/app.bundle.js",
   "access": "private",
   "version": "1.0.0",
   "description": "Base configuration for webpack+salesforce based projects",
