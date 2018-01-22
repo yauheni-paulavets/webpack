@@ -1,5 +1,5 @@
 {
-  "name": "webpack-external-framework",
+  "name": "webpack-external-library",
   "access": "private",
   "version": "1.0.0",
   "description": "Base configuration for webpack+salesforce based projects",
