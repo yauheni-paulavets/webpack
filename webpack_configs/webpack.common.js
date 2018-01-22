@@ -62,22 +62,6 @@ module.exports = {
 		 */
 		new webpack.DefinePlugin({
 			'NODE_ENV': JSON.stringify(NODE_ENV)
-		}),
-
-		/**
-		 * Plugin: CommonsChunkPlugin
-		 * Description: Shares common code between the pages.
-		 * It identifies common modules and put them into a commons chunk.
-		 *
-		 * See: https://webpack.js.org/plugins/commons-chunk-plugin/
-		 * See: https://webpack.js.org/plugins/limit-chunk-count-plugin/#multi-page-app
-		 */
-		new webpack.optimize.CommonsChunkPlugin({
-			name: 'vendor',
-			minChunks: module => /node_modules/.test(module.resource)
-				|| /bower_components/.test(module.resource)
-				|| /assets\/scripts/.test(module.resource)
-				|| /assets\/stylesheets\/@salesforce-ux/.test(module.resource)
 		})
 	]
 }
