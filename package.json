@@ -1,5 +1,6 @@
 {
-  "name": "webpack-base-framework",
+  "name": "webpack-external-framework",
+  "access": "private",
   "version": "1.0.0",
   "description": "Base configuration for webpack+salesforce based projects",
   "scripts": {
